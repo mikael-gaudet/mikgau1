@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<title>LWTR</title>
+	<body>
+		<div class="startimg">
+			<img src="webheader.png" style="width: 100%;">
+		</div>
+			<style type="text/css">
+					body {
+						background-color: #8D1000;
+					}
+					div {
+					    text-align: center;
+					}
+					* { margin: 0; }
+					img {
+						width:30%;height:auto;
+					}
+					.startimg {
+						height: 100vh; /* Make hight 100 percent of veiw port height */
+						overflow: hidden;
+
+					}
+					html {
+					    overflow: hidden; /* Stops "Gravity scroll" effect on mac.*/
+					    height: 100%;
+					}
+					body {
+					    height: 100%; /* Makes scrolling happen */
+					    overflow: auto;
+					}
+					.imgs img {
+						margin-top: 5%;
+						margin-bottom: 5%;
+						display: inline-block;
+					}
+					hr {
+						border-color: black;
+					}
+					.M {
+						border:1px solid black;
+
+					}
+			</style>
+			<div class="imgs">
+				<img id="my-img" src="Sofa1.png" onmouseover="hover1(this);" onmouseout="unhover1(this);" border="5"/>
+				<img id="my-img" src="Comp1.png" onmouseover="hover0(this);" onmouseout="unhover0(this);" border="5"/>
+				<img id="my-img" src="Spac1.png" onmouseover="hover2(this);" onmouseout="unhover2(this);" border="5"/>
+			</div>
+			<script type="text/javascript">
+				function unhover0(element) { /* Makes images change on hover*/
+			    	element.setAttribute('src', 'Comp1.png');
+							}
+				function hover0(element) { /* Makes images change on hover*/
+			    	element.setAttribute('src', 'Comp2.png');
+							}
+				function unhover1(element) { /* Makes images change on hover*/
+				    element.setAttribute('src', 'Sofa1.png');
+							}
+				function hover1(element) { /* Makes images change on hover*/
+				    element.setAttribute('src', 'Sofa2.png');
+							}
+				function unhover2(element) { /* Makes images change on hover*/
+				    element.setAttribute('src', 'Spac1.png');
+							}
+				function hover2(element) { /* Makes images change on hover*/
+				    element.setAttribute('src', 'Spac2.png');
+							}
+			</script>
+			<div class="M">
+				<img src="mikael-2017-logo.png">
+			</div>
+		<!-- PROJECT: MIKAEL GAUDET 2017-->
+	</body>
+</html>

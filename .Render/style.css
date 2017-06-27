@@ -1,0 +1,40 @@
+.parallax {
+    /* The image used */
+    background-image: url("Images/webheader.png");
+
+    /* Set a specific height */
+    min-height: 100vh;
+    min-width: 100vw;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*{margin: 0px;}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+ height: 100%;
+}
+#content {
+  background-color: #009688;
+  font-size:36px;
+  border-style: solid;
+  width: 100vw;
+}
+#comp-brb {
+  background-color: #00776c;
+  width: 100vw;
+  height: auto;
+}
+#ani-img img {
+  margin-top: 5%; /* Makes the margins on the primary content */
+  margin-bottom: 5%;
+  display: inline-block; /* Centers the primary content */
+}
+img {
+  width:30%;height:auto; /* Sets image width and auto fills height */
+}
+h1 {
+  font-family: 'ABeeZee';font-size: 10vw;
+}
